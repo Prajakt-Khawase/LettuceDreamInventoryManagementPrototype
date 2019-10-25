@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LettuceDreamInventoryManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+<servlet>
+    <description></description>
+    <display-name>AddUserServlet</display-name>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.lettucedreams.usermanagement.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/addsrv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateUserServlet</display-name>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.lettucedreams.usermanagement.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/updatesrv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteUserServlet</display-name>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.lettucedreams.usermanagement.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/deletesrv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SelectUserServlet</display-name>
+    <servlet-name>SelectUserServlet</servlet-name>
+    <servlet-class>com.lettucedreams.usermanagement.SelectUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectUserServlet</servlet-name>
+    <url-pattern>/selectsrv</url-pattern>
+  </servlet-mapping>
+</web-app>

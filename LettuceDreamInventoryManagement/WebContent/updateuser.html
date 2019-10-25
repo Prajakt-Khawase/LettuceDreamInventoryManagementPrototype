@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Prajakt Uttamrao Khawase">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="This file is used to send request for adding a User into database ">
+  <title>Update an User in Database</title>
+</head>
+<body>
+  Enter user details...
+  <form action="./updatesrv" method="post">
+    Employee-Id : <input type=text name="uid"> <br>
+    Employee-Name: <input type=text name="uname"> <br>
+    Gender : <input type=radio name="gender" value="Male">Male
+    <input type=radio name="gender" value="Female">Female
+    <input type=radio name="gender" value="Others">Others
+    <br>
+    Country : <select name="country">
+      <option value="">----select----</option>
+      <option value="USA">USA</option>
+      <option value="India">India </option>
+      <option value="Australia">Australia</option>
+    </select> <br> <br>
+    <input type=submit value="Update Employee"> 
+  </form>
+</body>
+</html>

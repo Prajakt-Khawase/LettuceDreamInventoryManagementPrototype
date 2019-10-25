@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Prajakt Uttamrao Khawase">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="This file is used to Fill the user details in field
+  specified in form and send send post request to server for adding a User into database ">
+  <title>Add a User in Database</title>
+</head>
+<body>
+ Enter user details...
+  <form action="./addsrv" method="post">
+    Employee-Id : <input type=text name="uid"> <br><br><br>
+    Employee-Name: <input type=text name="uname"> <br><br><br>
+    Gender : <input type=radio name="gender" value="Male">Male
+    <input type=radio name="gender" value="Female">Female
+    <input type=radio name="gender" value="Others">Others
+    <br><br><br>
+    Country : <select name="country">
+      <option value="">----select----</option>
+      <option value="USA"> USA </option>
+      <option value="India"> India </option>
+      <option value="Australia"> Australia</option>
+      <option value="Australia"> Nepal</option>
+      <option value="Australia"> Canada</option>
+      <option value="Australia"> Argentina</option>
+      <option value="Australia"> Spain</option>
+    </select> <br> <br><br><br>
+    <input type=submit value="Add Employee"> 
+  </form>
+</body>
+</html>
